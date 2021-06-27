@@ -1,0 +1,15 @@
+
+Step 1 : Take input of a number and convert it into binary.
+
+Step 2 : Check the number of 1’s in the binary number, if it even set parity bit as 0 and if odd then set parity bit as 1, 
+         so ultimately the total parity becomes even.
+         
+Step 3 : For simulating an error, select a random position and a random bit 0/1, 
+         then place the bit in the random position.
+         
+Step 4 : Now again check the number of 1’s in the binary number, 
+         if it even set parity bit as 0 and if odd then set parity bit as 1.
+         
+Step 5 : If the parity bit is 1, then there is an error and so reject the number and 
+         if the parity bit is 0, then accept the bits and remove the last two bits from the binary and 
+         convert it into decimal, this was our original number.
